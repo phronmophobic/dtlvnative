@@ -1,12 +1,6 @@
 name: Build
 on:
   workflow_dispatch:
-# on: push
-
-on:
-  release:
-    types:
-      - created
 
 jobs:
   build:
