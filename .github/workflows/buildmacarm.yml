@@ -22,6 +22,8 @@ jobs:
           mkdir -p src/java/datalevin/dtlvnative/macosx-arm64
           mkdir -p macosx-arm64/resources/datalevin/dtlvnative/macosx-arm64
 
+          export MACOSX_DEPLOYMENT_TARGET=10.14
+
           brew install leiningen libomp llvm
 
           script/build-macos
